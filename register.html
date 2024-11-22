@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sweet Life</h1>
+        <p>Your favorite ice cream shop!</p>
+    </header>
+
+    <!-- Navigation with Store Name -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="register.html" class="nav-link active">Register</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="features.html" class="nav-link">Features</a>
+    </nav>
+
+
+<main>
+    <h2>Register</h2>
+    <form method="POST" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <span class="error-msg" id="username-err"></span>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error-msg" id="email-err"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span class="error-msg" id="password-err"></span>
+        </div>
+        <div>
+            <label for="re-password">Confirm Password:</label>
+            <input type="password" id="re-password" name="confirmPassword">
+            <span class="error-msg" id="re-password-err"></span>
+        </div>
+        <div>
+            <label for="flavour">Favourite Flavour:</label>
+            <select id="flavour" name="flavour">
+                <option value="">Select a flavour</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+            </select>
+            <span class="error-msg" id="flavour-err"></span>
+        </div>
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" id="gender-male" name="gender" value="male"> Male</label>
+            <label><input type="radio" id="gender-female" name="gender" value="female"> Female</label>
+            <label><input type="radio" id="gender-other" name="gender" value="other"> Other</label>
+            <span class="error-msg" id="gender-err"></span>
+        </fieldset>
+        <fieldset>
+            <legend>Preference:</legend>
+            <label><input type="checkbox" id="cone" name="preference" value="cone"> Cone</label>
+            <label><input type="checkbox" id="cup" name="preference" value="cup"> Cup</label>
+            <label><input type="checkbox" id="pop" name="preference" value="pop"> Popsicle</label>
+            <span class="error-msg" id="type-err"></span>
+        </fieldset>
+        <button type="submit" onclick="return validateForm()">Submit</button>
+    </form>
+</main>
+
+<script src="js/register.js"></script>
+</body>
+</html>

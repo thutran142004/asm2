@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sweet Life</h1>
+        <p>Your favorite ice cream shop!</p>
+    </header>
+
+    <!-- Navigation with Store Name -->
+    <nav>
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="register.html" class="nav-link">Register</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="features.html" class="nav-link active">Features</a>
+    </nav>
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Page Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Highlighted Menu Item</td>
+                <td>The current page's menu item is highlighted to enhance user navigation.</td>
+                <td><a href="features.html">View Example</a></td>
+            </tr>
+            <tr>
+                <td>Automatic Billing Address</td>
+                <td>Automatically fills the billing address if the delivery address is provided and a checkbox is checked.</td>
+                <td><a href="order.html#billing">View Example</a></td>
+            </tr>
+            <tr>
+                <td>Adaptive Credit Card Length</td>
+                <td>Limits the credit card number length based on the selected card type (e.g., 16 digits for Visa and MasterCard).</td>
+                <td><a href="order.html#payment">View Example</a></td>
+            </tr>
+            <tr>
+                <td>Form Validation</td>
+                <td>Ensures all required fields are filled, and data formats are correct before submission (e.g., password length, postcode).</td>
+                <td><a href="register.html#validation">View Example</a></td>
+            </tr>
+            <tr>
+                <td>Accessible Design</td>
+                <td>Implements WAVE accessibility features, including skip links and alternative text for images.</td>
+                <td><a href="features.html#gallery">View Example</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <section class="gallery" id="gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-container">
+            <img src="images/home.png" alt="Delicious Ice Cream 1">
+            <img src="images/register.png" alt="Delicious Ice Cream 2">
+            <img src="images/order.png" alt="Delicious Ice Cream 3">
+            <img src="images/features.png" alt="Delicious Ice Cream 4">
+        </div>
+    </section>
+</main>
+
+    <script src="js/order.js"></script>
+</body>
+</html>
